@@ -85,3 +85,15 @@ top: 50%;
     min-width: 2vw;
 
 }
+
+.page-search{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-artist-button{
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}

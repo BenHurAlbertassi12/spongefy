@@ -5,6 +5,9 @@ import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import MsgLoading from '../components/MsgLoading';
 import HeaderBusca from '../components/HeaderBusca';
 
+import '../css/Busca.css'
+import lupa from '../image/lupa.png'
+
 class Search extends React.Component {
   constructor() {
     super();
@@ -63,46 +66,48 @@ class Search extends React.Component {
     const { name, escolha, loading, mensagem, infoFrase, busca } = this.state;
 
     return (
-      <div data-testid="page-search">
+      <div>
         <HeaderBusca />
-        <h1>Busca</h1>
-        <form>
-          <label htmlFor="name">
-            <input
-              data-testid="search-artist-input"
-              type="text"
-              name="name"
-              id="name"
-              value={ name }
-              onChange={ this.trocarInput }
-            />
-          </label>
-          <button
-            data-testid="search-artist-button"
-            disabled={ this.aprovado() }
-            onClick={ this.botaoParaLocalizar }
-            type="button"
-          >
-            Pesquisar
-          </button>
-        </form>
+        <div className='page-search'>
+          <form>
+            <label htmlFor='name'>
+              <input
+                className='search-artist-input'
+                type='text'
+                name='name'
+                id='name'
+                value={name}
+                onChange={this.trocarInput}
+              />
+            </label>
+            <div className='div-lupa'>
 
+            <button
+              className='search-artist-button'
+              disabled={this.aprovado()}
+              onClick={this.botaoParaLocalizar}
+              type='button'>
+              <img className='lupa' src={lupa} alt='lupa' />
+            </button>
+                </div>
+          </form>
+        </div>
         {infoFrase && mensagem}
         {loading && <MsgLoading />}
         {escolha.length >= 2 && <p>{`Resultado de álbuns de: ${busca}`}</p>}
-        {escolha.length >= 2 && escolha.map((evento, chave) => (
-          <div data-testid="artist-name" key={ chave }>
-            <p>{ evento.artistName }</p>
-            <p>{ evento.collectionName }</p>
-            <img alt={ evento.collectionName } src={ evento.artworkUrl100 } />
-            <Link
-              data-testid={ `link-to-album-${evento.collectionId}` }
-              to={ `/album/${evento.collectionId}` }
-            >
-              Album
-            </Link>
-          </div>
-        ))}
+        {escolha.length >= 2 &&
+          escolha.map((evento, chave) => (
+            <div className='artist-name' key={chave}>
+              <p>{evento.artistName}</p>
+              <p>{evento.collectionName}</p>
+              <img alt={evento.collectionName} src={evento.artworkUrl100} />
+              <Link
+                className={`link-to-album-${evento.collectionId}`}
+                to={`/album/${evento.collectionId}`}>
+                Album
+              </Link>
+            </div>
+          ))}
       </div>
     );
   }
