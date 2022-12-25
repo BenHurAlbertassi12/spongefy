@@ -3,7 +3,8 @@ display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 width: 100%;
-margin-top: 50px;
+margin-top: -10px;
+align-items: center;
 }
 
 .info-album{
@@ -17,6 +18,7 @@ font-family: 'Epilogue';
     line-height: 25px;
 
     color: #023031;
+
 }
 .album-name-card{
 font-family: 'Epilogue';
@@ -54,24 +56,4 @@ justify-content: space-around;
 align-items: center;
 }
 
-.player-music[type='checkbox']{
-    display: none;
-}
-.boxzinho{
-    position: relative;
-}
-.boxzinho::before{
-    content: '';
-    background: url("../image/bobheart.png");
-    background-position: center;
-    background-size: contain;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 45px;
-    top:-8px;
-}
 
-.player-music[type='checkbox']:checked+.boxzinho::before{
-    background: url("../image/pinkheart.png");
-}

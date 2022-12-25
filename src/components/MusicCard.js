@@ -95,8 +95,9 @@ class MusicCard extends React.Component {
                   <code>audio</code>
                 </audio>
 
-                  <label htmlFor={musica.trackId} className='boxzinho'>
-                  Amei
+                  <label htmlFor={musica.trackId} className='boxzinho container'>
+                    
+                    <span className='checkmark'>Amei{'  '}</span>
                     <input
                     className='player-music'
                     // name='boxzinho'
