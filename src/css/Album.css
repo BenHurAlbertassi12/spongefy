@@ -1,0 +1,77 @@
+.div-muisic-card{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+width: 100%;
+margin-top: 50px;
+}
+
+.info-album{
+display: block;
+}
+.album-name-card, .artist-name-card{
+font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 25px;
+
+    color: #023031;
+}
+.album-name-card{
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 37px;
+color: #023031;
+}
+.artist-name-card{
+width: 255px;
+height: 36px;
+left: 184px;
+top: 714px;
+
+}
+
+.musica-player{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 50px;
+   
+
+}
+
+.risco{
+    margin: 15px;
+}
+.div-musica{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.player-music[type='checkbox']{
+    display: none;
+}
+.boxzinho{
+    position: relative;
+}
+.boxzinho::before{
+    content: '';
+    background: url("../image/bobheart.png");
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 45px;
+    top:-8px;
+}
+
+.player-music[type='checkbox']:checked+.boxzinho::before{
+    background: url("../image/pinkheart.png");
+}
