@@ -1,0 +1,82 @@
+/* stylelint-disable linebreaks */
+/* stylelint-disable-next-line no-empty-first-line */
+/* stylelint-disable-next-line comment-empty-line-before */
+/* stylelint-disable-next-line linebreaks */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Nunito, sans-serif
+}
+
+.cabecalho {
+    left: 0px;
+    top: 0px;
+    z-index: +2;
+    width: 100%;
+    background-color: #2a9d8f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+.nomeheader {
+    color: azure;
+    border: 1px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.spongeheader{
+    /* position: absolute; */
+    width: 117px;
+    top: -14px;
+}
+.cabecalhonome{
+    left: 0px;
+    top: 0px;
+    z-index: +2;
+    width: 100%;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linki{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: azure;
+    border: 1px;
+    padding: 1px;
+    margin: 1px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.barraheader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barraselect {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius:10px;
+}
+.linkselect{
+    color: black;
+}
+
