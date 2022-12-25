@@ -81,33 +81,37 @@ class Search extends React.Component {
               />
             </label>
             <div className='div-lupa'>
-
-            <button
-              className='search-artist-button'
-              disabled={this.aprovado()}
-              onClick={this.botaoParaLocalizar}
-              type='button'>
-              <img className='lupa' src={lupa} alt='lupa' />
-            </button>
-                </div>
+              <button
+                className='search-artist-button'
+                disabled={this.aprovado()}
+                onClick={this.botaoParaLocalizar}
+                type='button'>
+                <img className='lupa' src={lupa} alt='lupa' />
+              </button>
+            </div>
           </form>
         </div>
         {infoFrase && mensagem}
         {loading && <MsgLoading />}
-        {escolha.length >= 2 && <p>{`Resultado de álbuns de: ${busca}`}</p>}
+        {escolha.length >= 2 && <p className='results'>{`Resultado de álbuns de: ${busca}`}</p>}
+        <div className='div-map'>
         {escolha.length >= 2 &&
           escolha.map((evento, chave) => (
-            <div className='artist-name' key={chave}>
-              <p>{evento.artistName}</p>
-              <p>{evento.collectionName}</p>
-              <img alt={evento.collectionName} src={evento.artworkUrl100} />
+            <div className='artist-name div-art-name' key={chave}>
               <Link
-                className={`link-to-album-${evento.collectionId}`}
+                className='artist-name art'
                 to={`/album/${evento.collectionId}`}>
-                Album
+              <img
+                className='artist-name art art-img'
+                alt={evento.collectionName}
+                src={evento.artworkUrl100}
+                />
+                {evento.collectionName}
               </Link>
+              <p className='artist-name art'>{evento.artistName}</p>
             </div>
           ))}
+          </div>
       </div>
     );
   }
