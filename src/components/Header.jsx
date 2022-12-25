@@ -81,11 +81,3 @@ class Header extends React.Component {
 }
 
 export default Header;
-
-// Linhas 9 a 12 Definindo o this.state
-// Linhas 15 a 22 chamei o getUser dentro do componentDidMount, nele setei os estados de loading e nome.
-// caso verdadeiro carrega msg
-// Linha 25 desestruturação para o this.state
-// Linha 28 fiz a chamada da mensagem de Carregando... pela pagina criada MsgLoading, assim como feito no requisito anterior
-// Linhas 31 a 33 adiantei o requisito 4
-// Linha 34 imprimi o nome do usuario atravez de um h1 recendo { nome }
