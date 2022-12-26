@@ -6,6 +6,7 @@ import MsgLoading from '../components/MsgLoading';
 import '../css/Login.css';
 
 import spongefy from '../image/spongefy.png';
+import Footer from '../components/Footer';
 
 class Login extends React.Component {
   constructor() {
@@ -46,41 +47,41 @@ class Login extends React.Component {
   render() {
     const { name, loading, next } = this.state;
     return (
-      <div className="divbody">
-        <div className="logo">
-          <div className="divname">
-            <p className="namesponge">Sponge</p>
-            <p className="namefy">Fy</p>
+      <div className='divbody'>
+        <div className='logo'>
+          <div className='divname'>
+            <p className='namesponge'>Sponge</p>
+            <p className='namefy'>Fy</p>
           </div>
-          <img className="sponge" src={ spongefy } alt="spongefylogo" />
+          <img className='sponge' src={spongefy} alt='spongefylogo' />
         </div>
-        <div data-testid="page-login">
+        <div data-testid='page-login'>
           {loading && <MsgLoading />}
-          {next && <Redirect to="/search" />}
-          <form className="pagelogin" action="">
-            <label htmlFor="name">
+          {next && <Redirect to='/search' />}
+          <form className='pagelogin' action=''>
+            <label htmlFor='name'>
               <input
-                data-testid="login-name-input"
-                type="text"
-                name="name"
-                id="name"
-                className="name"
-                value={ name }
-                onChange={ this.trocarInput }
-                placeholder="Nome"
+                data-testid='login-name-input'
+                type='text'
+                name='name'
+                id='name'
+                className='name'
+                value={name}
+                onChange={this.trocarInput}
+                placeholder='Nome'
               />
             </label>
             <button
-              type="button"
-              className="button"
-              onClick={ this.botaoParaSalvar }
-              data-testid="login-submit-button"
-              disabled={ this.aprovado() }
-            >
-              <span className="entrar">Entrar</span>
+              type='button'
+              className='button'
+              onClick={this.botaoParaSalvar}
+              data-testid='login-submit-button'
+              disabled={this.aprovado()}>
+              <span className='entrar'>Entrar</span>
             </button>
           </form>
         </div>
+        <Footer />
       </div>
     );
   }

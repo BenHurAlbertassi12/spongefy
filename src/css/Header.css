@@ -4,78 +4,95 @@
 /* stylelint-disable-next-line linebreaks */
 
 * {
-    padding: 0;
-    margin: 0;
+padding: 0;
+margin: 0;
 }
 body{
-    font-family: Nunito, sans-serif
+font-family: Nunito, sans-serif
 }
 
 .cabecalho {
-    left: 0px;
-    top: 0px;
-    z-index: +2;
-    width: 100%;
-    background-color: #2a9d8f;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+left: 0px;
+top: 0px;
+z-index: +2;
+width: 100%;
+background-color: #2a9d8f;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+height: 50px;
+box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
 }
 .nomeheader {
-    color: azure;
-    border: 1px;
-    padding: 1px;
-    margin: 1px;
+color: azure;
+border: 1px;
+padding: 1px;
+margin: 1px;
+
 }
 
 .spongeheader{
-    /* position: absolute; */
-    width: 117px;
-    top: -14px;
+/* position: absolute; */
+width: 117px;
+top: -14px;
 }
 .cabecalhonome{
-    left: 0px;
-    top: 0px;
-    z-index: +2;
-    width: 100%;
-    background-color: darkslategrey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+left: 0px;
+top: 0px;
+z-index: +2;
+width: 100%;
+background-color: darkslategrey;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .linki{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 
-    color: azure;
-    border: 1px;
-    padding: 1px;
-    margin: 1px;
-    text-decoration: none;
-    font-size: 24px;
+color: azure;
+border: 1px;
+padding: 1px;
+margin: 1px;
+text-decoration: none;
+font-size: 24px;
 }
 
 .barraheader{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .barraselect {
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
+width: 100%;
+background-color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 8px;
 }
 .linkselect{
-    color: black;
+color: black;
 }
 
+.nomeheader{
+/* box-sizing: border-box; */
+position: relative;
+width: 250px;
+height: 25px;
+background: #FFFFFF;
+color: darkslategrey;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+/* font-size: 24px; */
+align-items: center;
+text-align: center;
+font-style: italic;
+justify-content: center;
+
+}
