@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import HeaderPerfil from '../components/HeaderPerfil';
 
 class ProfileEdit extends React.Component {
@@ -7,6 +8,7 @@ class ProfileEdit extends React.Component {
       <div data-testid="page-profile-edit">
         <HeaderPerfil />
         <h1> ProfileEdit </h1>
+        <Footer />
       </div>
     );
   }

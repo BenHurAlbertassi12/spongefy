@@ -7,6 +7,7 @@ import HeaderBusca from '../components/HeaderBusca';
 
 import '../css/Busca.css'
 import lupa from '../image/lupa.png'
+import Footer from '../components/Footer';
 
 class Search extends React.Component {
   constructor() {
@@ -93,25 +94,28 @@ class Search extends React.Component {
         </div>
         {infoFrase && mensagem}
         {loading && <MsgLoading />}
-        {escolha.length >= 2 && <p className='results'>{`Resultado de álbuns de: ${busca}`}</p>}
+        {escolha.length >= 2 && (
+          <p className='results'>{`Resultado de álbuns de: ${busca}`}</p>
+        )}
         <div className='div-map'>
-        {escolha.length >= 2 &&
-          escolha.map((evento, chave) => (
-            <div className='artist-name div-art-name' key={chave}>
-              <Link
-                className='artist-name art'
-                to={`/album/${evento.collectionId}`}>
-              <img
-                className='artist-name art art-img'
-                alt={evento.collectionName}
-                src={evento.artworkUrl100}
-                />
-                {evento.collectionName}
-              </Link>
-              <p className='artist-name art'>{evento.artistName}</p>
-            </div>
-          ))}
-          </div>
+          {escolha.length >= 2 &&
+            escolha.map((evento, chave) => (
+              <div className='artist-name div-art-name' key={chave}>
+                <Link
+                  className='artist-name art'
+                  to={`/album/${evento.collectionId}`}>
+                  <img
+                    className='artist-name art art-img'
+                    alt={evento.collectionName}
+                    src={evento.artworkUrl100}
+                  />
+                  {evento.collectionName}
+                </Link>
+                <p className='artist-name art'>{evento.artistName}</p>
+              </div>
+            ))}
+        </div>
+        <Footer />
       </div>
     );
   }

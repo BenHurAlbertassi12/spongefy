@@ -30,7 +30,7 @@ class Header extends React.Component {
       <div>
         <div className="cabecalhonome">
           <img className="spongeheader" src={ spongefy } alt="logo" />
-          <p className="nomeheader" data-testid="header-user-name">
+          <p className="header-user-name">
             {nome}
           </p>
         </div>

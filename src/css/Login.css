@@ -6,94 +6,101 @@
 /* stylelint-disable-next-line linebreaks */
 
 .divbody {
-    background: #FAFAFA;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    display: flex;
+background: #FAFAFA;
+justify-content: center;
+align-items: center;
+height: 100%;
+display: flex;
 }
 
 
 ::placeholder{
-    text-align: center;
+text-align: center;
 }
 
 .name, .button{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 16px;
-    gap: 10px;
-    width: 32vw;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 12px 16px;
+gap: 10px;
+width: 32vw;
 
-    height: 3vw;
-    border-radius: 10px;
-    margin-top:10px;
-    position: fixed;
-    left: 16%;
-    min-width: 250px;
-    min-height: 35px;
-    box-sizing: border-box;
-    font-size: 16px;
+height: 3vw;
+border-radius: 10px;
+margin-top:10px;
+position: fixed;
+left: 16%;
+min-width: 250px;
+min-height: 35px;
+box-sizing: border-box;
+font-size: 16px;
 }
 .name{
 top: 50%;
 }
 .button{
-    top: 58%;
-    background: #003BE5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
+top: 58%;
+background: #003BE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+align-items: center;
+justify-content: center;
 }
 
 .entrar {
-    font-family: 'Verdana';
-    color: #FFFFFF;
+font-family: 'Verdana';
+color: #FFFFFF;
 }
 
 .sponge { 
-        width: 600px;
-        max-width: 100%
+width: 600px;
+max-width: 100%
 }
 
 .namesponge, .namefy{
-    position: relative;
-    font-family: 'Slackey', cursive;
-    font-size: 5vw;
-    color: gold;
-    text-shadow: rgb(22, 22, 21) 1px 0 10px;
-    display: inline-flex;
-    left: 20px;
+position: relative;
+font-family: 'Slackey', cursive;
+font-size: 5vw;
+color: gold;
+text-shadow: rgb(22, 22, 21) 1px 0 10px;
+display: inline-flex;
+left: 20px;
 }
 .namefy{
-    position: relative;
-    left: 100px
+position: relative;
+left: 100px
 }
 .logo {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+display:flex;
+justify-content: space-between;
+align-items: center;
 
-            margin: 0px;
-                padding: 0px;
-                border: 0px;
+margin: 0px;
+padding: 0px;
+border: 0px;
 }
 
 .divname{
-    min-width: 2vw;
+min-width: 2vw;
 
 }
 
 .page-search{
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 .search-artist-button{
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    border: 0;
+background-color: transparent;
+margin: 0;
+padding: 0;
+border: 0;
+
+}
+
+.trabalhando{
+display: flex;
+border-radius: 50px;
+width: 40vw;
 
 }

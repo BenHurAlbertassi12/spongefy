@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import MusicCard from '../components/MusicCard';
+import Footer from '../components/Footer';
 
 class Album extends React.Component {
   constructor(props) {
@@ -14,12 +15,11 @@ class Album extends React.Component {
   render() {
     const { id } = this.state;
     return (
-      <div data-testid="page-album">
+      <div data-testid='page-album'>
         <h2>Album</h2>
         <Header />
-        <MusicCard
-          buscarID={ id }
-        />
+        <MusicCard buscarID={id} />
+        <Footer />
       </div>
     );
   }
