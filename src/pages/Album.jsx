@@ -16,7 +16,6 @@ class Album extends React.Component {
     const { id } = this.state;
     return (
       <div data-testid='page-album'>
-        <h2>Album</h2>
         <Header />
         <MusicCard buscarID={id} />
         <Footer />
